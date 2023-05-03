@@ -51,18 +51,21 @@ public class GerenciadorContatos {
 		System.out.println("Mostrar contato da lista");
 		System.out.println("===============================");
 
-		int totalContatos = contatos.length - 1;
+		int totalContatos = 0;
 
-		for (int i = 0; i < contatos.length; i++) {
+		for (int i = 0; i < numTotalContatos; i++) {
 
 			if (contatos[i].getNome() != null) {
 
 				System.out.println(contatos[i].toString());
-			} else if (i == totalContatos) {
+			} 
+			else {
+				totalContatos++;
+			}			
+		}
+		if (totalContatos == numTotalContatos) {
 
-				System.out.println("Você ainda não tem contatos adicionados");
-			}
-
+			System.out.println("Você ainda não tem contatos adicionados");
 		}
 	}
 

@@ -11,7 +11,7 @@ public class AgendaMain {
 		String nome;
 		
 		while (rodandoBoolean) {
-			
+			System.out.println("---------------------");
 			System.out.println("Agenda de contatos \n"
 					+ "\n1 - Adicionar contatos"
 					+ "\n2 - Mostrar contatos"
@@ -32,11 +32,13 @@ public class AgendaMain {
 				break;
 
 			case 3:
+				System.out.println("Digite o nome do contato para apaga-lo: ");
 				nome = agendaContatos.scanner().next();
 				agendaContatos.apagarContato(nome);
 				break;
 
 			case 4:
+				System.out.println("Digite o nome do contato para busca-lo: ");
 				nome = agendaContatos.scanner().next();
 				agendaContatos.buscarContato(nome);
 				break;
