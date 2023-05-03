@@ -68,6 +68,9 @@ public class GerenciadorContatos {
 
 	public void buscarContato(String nome) {
 
+		System.out.println("Buscar contato");
+		System.out.println("===============================");
+
 		for (int i = 0; i < contatos.length; i++) {
 
 			if (contatos[i].getNome().equals(nome)) {
@@ -80,6 +83,9 @@ public class GerenciadorContatos {
 	}
 
 	public void apagarContato(String nome) {
+
+		System.out.println("Apagar contato");
+		System.out.println("===============================");
 
 		for (int i = 0; i < numTotalContatos; i++) {
 
